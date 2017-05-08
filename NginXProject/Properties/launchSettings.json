@@ -1,4 +1,4 @@
-﻿{
+{
   "iisSettings": {
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
@@ -18,10 +18,11 @@
     "NginXProject": {
       "commandName": "Project",
       "launchBrowser": true,
+      "launchUrl": "http://localhost:5200",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
-      },
-      "applicationUrl": "http://localhost:64224"
+      }
+      //,"applicationUrl": "http://localhost:5200"
     }
   }
 }
