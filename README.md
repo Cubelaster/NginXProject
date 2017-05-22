@@ -9,3 +9,4 @@ http://stackoverflow.com/questions/14267010/how-to-create-self-signed-ssl-certif
 
 OpenSSL binaries are no longer supported by OpenSSL, so you have to download it from another source
 https://code.google.com/archive/p/openssl-for-windows/downloads - try this one
+Once "installed" use cmd to fire it up using openssl command
