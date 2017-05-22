@@ -25,17 +25,12 @@ namespace NginXProject
         {
             Console.WriteLine("Running demo with Kestrel.");
 
-            //var config = new ConfigurationBuilder()
-            //    .SetBasePath(Directory.GetCurrentDirectory())
-            //    .AddJsonFile("hosting.json", optional: true)
-            //    .Build();
-
             var host = new WebHostBuilder()
                 .UseKestrel()
                 //.UseConfiguration(config)
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseStartup<Startup>()
-                .UseUrls("http://localhost:5200", "https://localhost:5201")
+                .UseUrls("http://localhost:5200")
                 //.UseIISIntegration()
                 .Build();
 
