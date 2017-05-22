@@ -18,11 +18,11 @@
     "NginXProject": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "http://localhost:5200",
+      "launchUrl": "https://localhost:5201",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
-      "applicationUrl": "http://localhost:5200"
+      "applicationUrl": "https://localhost:5201"
     }
   }
 }

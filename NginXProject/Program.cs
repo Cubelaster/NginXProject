@@ -26,11 +26,15 @@ namespace NginXProject
             Console.WriteLine("Running demo with Kestrel.");
 
             var host = new WebHostBuilder()
-                .UseKestrel()
-                //.UseConfiguration(config)
+                .UseKestrel(
+                    options =>
+                    {
+                        options.UseHttps("nginXCert.pfx", "Password11__");
+                    }
+                )
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseStartup<Startup>()
-                .UseUrls("http://localhost:5200")
+                .UseUrls("https://localhost:5201")
                 //.UseIISIntegration()
                 .Build();
 
